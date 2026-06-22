@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Interpolation Search</title>
+</head>
+
+<body>
+
+    <h1>Implementation and Performance Analysis of Interpolation Search</h1>
+
+    <form method="POST">
+
+        <input
+            type="number"
+            name="target"
+            placeholder="Enter Target Number"
+            required>
+
+        <button type="submit">
+            Search
+        </button>
+
+    </form>
+
+    {% if result %}
+
+    <hr>
+
+    <h2>Interpolation Search</h2>
+
+    <p>Index : {{ result.idx_i }}</p>
+    <p>Comparisons : {{ result.comp_i }}</p>
+
+    <h2>Binary Search (Comparison)</h2>
+
+    <p>Index : {{ result.idx_b }}</p>
+    <p>Comparisons : {{ result.comp_b }}</p>
+
+    {% endif %}
+
+</body>
+
+</html>
